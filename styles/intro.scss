@@ -1,0 +1,8 @@
+.shorten-box {
+  @apply flex flex-col p-6 space-y-4 rounded-lg bg-no-repeat bg-dark-violet bg-right-top -translate-y-1/2;
+  background-image: url("../assets/bg-shorten-mobile.svg");
+}
+
+.shorten-link-box {
+  @apply flex flex-col p-4 space-y-4 rounded-lg bg-white -translate-y-1/2;
+}

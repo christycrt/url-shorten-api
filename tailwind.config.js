@@ -14,6 +14,7 @@ module.exports = {
       white: "hsl(0, 0%, 100%)"
     },
     fontSize: {
+      sm: ['14px', '22px'],
       base: ['16px', '24px'],
       lg: ['18px', '28px'],
       xl: ['22px', '30px'],

@@ -6,3 +6,7 @@
 .shorten-link-box {
   @apply flex flex-col p-4 space-y-4 rounded-lg bg-white -translate-y-1/2;
 }
+
+input::placeholder {
+  @apply text-red border-red;
+}

@@ -43,12 +43,17 @@ const ShortenLinkBox = () => {
     <div className="space-y-6">
       <form onSubmit={onSubmit}>
         <div className="shorten-box">
-          <input
-            className="bg-white px-3 py-3 rounded-md h-[56px]"
-            type="text"
-            placeholder="Shorten a link here..."
-            {...register("url", { required: true })}
-          />
+          <div>
+            <input
+              className="bg-white px-3 py-3 rounded-md h-[56px] mb-1 w-[100%]"
+              type="text"
+              placeholder="Shorten a link here..."
+              {...register("url", { required: true })}
+            />
+            <p className="text-red italic text-sm">
+              {errors.url && "Please add a link"}
+            </p>
+          </div>
           <Button type="submit">Shorten It!</Button>
         </div>
       </form>

@@ -1,9 +1,9 @@
 import Features from "../components/Features";
+import Footer from "components/Footer";
 import Head from "next/head";
 import Intro from "../components/Intro";
 import Navbar from "../components/common/Navbar";
 import type { NextPage } from "next";
-import ShortenLink from "../components/ShortenLink";
 
 const Home: NextPage = () => {
   return (
@@ -14,18 +14,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* <p className="title">bhjgg</p>
-        <Button
-          onClick={() => {
-            console.log("Hi");
-          }}
-        >
-          Click
-        </Button> */}
         <Navbar />
         <Intro />
         <Features />
-        <ShortenLink />
+        <Footer />
       </main>
     </div>
   );

@@ -20,6 +20,8 @@ const Intro = () => {
         </p>
         <div className="flex justify-center">
           <Button
+            size="lg"
+            radius="full"
             onClick={() => {
               console.log("Get Started");
             }}

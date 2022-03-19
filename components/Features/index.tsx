@@ -1,13 +1,13 @@
-import Button from "./common/Button";
-import FeatureCard from "./common/FeatureCard";
-import ShortenLinkBox from "components/Intro/ShortenLinkBox";
-import featureData from "../data/FeatureData.json";
+import Button from "../common/Button";
+import FeatureCard from "../common/FeatureCard";
+import ShortenLinkList from "components/Features/ShortenLinkList";
+import featureData from "../../data/FeatureData.json";
 
 const Features = () => {
   return (
     <>
       <div className="bg-grayish container mx-auto px-6 pb-20">
-        <ShortenLinkBox />
+        <ShortenLinkList />
         <p className="font-bold text-2xl text-center mb-6 text-very-dark-blue">
           Advanced Statistics
         </p>
@@ -34,7 +34,11 @@ const Features = () => {
           Boost your links today
         </p>
         <div className="flex justify-center">
-          <Button onClick={() => console.log("Get Started")}>
+          <Button
+            size="lg"
+            radius="full"
+            onClick={() => console.log("Get Started")}
+          >
             Get Started
           </Button>
         </div>

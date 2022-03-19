@@ -20,7 +20,7 @@ const data = [
   },
 ];
 
-const ShortenLink = () => {
+const Footer = () => {
   return (
     <div className="flex flex-col text-center bg-very-dark-blue py-16">
       <div className="flex justify-center mb-16">
@@ -48,4 +48,4 @@ const ShortenLink = () => {
   );
 };
 
-export default ShortenLink;
+export default Footer;

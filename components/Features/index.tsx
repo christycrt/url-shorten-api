@@ -1,12 +1,12 @@
 import Button from "../common/Button";
-import FeatureCard from "../common/FeatureCard";
+import FeatureCard from "./FeatureCard";
 import ShortenLinkList from "components/Features/ShortenLinkList";
 import featureData from "../../data/FeatureData.json";
 
 const Features = () => {
   return (
-    <>
-      <div className="bg-grayish container mx-auto px-6 pb-20">
+    <div className="bg-grayish">
+      <div className="container pb-20">
         <ShortenLinkList />
         <p className="font-bold text-2xl text-center mb-6 text-very-dark-blue">
           Advanced Statistics
@@ -43,7 +43,7 @@ const Features = () => {
           </Button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

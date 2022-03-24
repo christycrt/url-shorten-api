@@ -1,7 +1,7 @@
 interface Props {
   type?: "submit" | undefined;
   onClick?: () => void;
-  size: "sm" | "base" | "lg";
+  size: "s-sm" | "sm" | "base" | "lg";
   radius: "full" | "base";
   disable?: boolean;
 }
@@ -16,14 +16,17 @@ const Button: React.FC<Props> = ({
 }) => {
   let sizeClass;
   switch (size) {
+    case "s-sm":
+      sizeClass = "text-sm py-2 px-5";
+      break;
     case "sm":
-      sizeClass = "text-sm py-3";
+      sizeClass = "text-sm py-3 px-12";
       break;
     case "lg":
-      sizeClass = "text-lg py-4";
+      sizeClass = "text-lg py-4 px-12";
       break;
     default:
-      sizeClass = "text-base py-4";
+      sizeClass = "text-base py-4 px-12";
       break;
   }
 
@@ -40,7 +43,7 @@ const Button: React.FC<Props> = ({
   return (
     <button
       type={type}
-      className={`px-12 bg-cyan text-white font-bold ${sizeClass} ${radiusClass}`}
+      className={`bg-cyan text-white font-bold ${sizeClass} ${radiusClass}`}
       onClick={onClick}
       disabled={disable}
     >

@@ -1,6 +1,6 @@
 .shorten-box {
-  @apply flex flex-col p-6 space-y-4 rounded-lg bg-no-repeat bg-dark-violet bg-right-top -translate-y-1/2;
-  background-image: url("../assets/bg-shorten-mobile.svg");
+  @apply flex flex-col p-6 space-y-4 rounded-lg bg-no-repeat bg-dark-violet bg-right-top -translate-y-1/2
+  bg-shorten-sm lg:bg-shorten-lg lg:grid lg:grid-cols-[4fr_1fr] lg:gap-6 lg:px-16 lg:py-14 lg:space-y-0 lg:bg-cover;
 }
 
 .shorten-link-box {

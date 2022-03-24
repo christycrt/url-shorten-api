@@ -11,16 +11,28 @@ module.exports = {
       "grayish-violet": "hsl(257, 7%, 63%)",
       "very-dark-blue": "hsl(255, 11%, 22%)",
       "very-dark-violet": "hsl(260, 8%, 14%)",
-      white: "hsl(0, 0%, 100%)"
+      white: "hsl(0, 0%, 100%)",
     },
     fontSize: {
-      sm: ['14px', '22px'],
-      base: ['16px', '24px'],
-      lg: ['18px', '28px'],
-      xl: ['22px', '30px'],
-      '2xl': ['28px', '34px'],
-      '3xl': ['42px', '1.2']
-    }
+      sm: ["14px", "22px"],
+      base: ["16px", "24px"],
+      lg: ["18px", "28px"],
+      xl: ["22px", "30px"],
+      "2xl": ["28px", "34px"],
+      "3xl": ["42px", "1.2"],
+      "4xl": ["80px", 1.2],
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1.5rem",
+        lg: "5rem",
+      },
+    },
+    backgroundImage: {
+      "shorten-sm": "url('../assets/bg-shorten-mobile.svg')",
+      "shorten-lg": "url('../assets/bg-shorten-desktop.svg')",
+    },
   },
   plugins: [],
 };

@@ -13,7 +13,7 @@ const NavbarMobile = () => {
     <nav className="relative">
       <ul className="flex justify-between items-center container pt-8 pb-6">
         <li>
-          <img className="logo" src="images/logo.svg" alt="logo" />
+          <img className="logo-navbar" src="images/logo.svg" alt="logo" />
         </li>
         <li onClick={handleClick}>
           <FaBars className="text-2xl text-grayish-violet" />

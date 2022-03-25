@@ -5,7 +5,7 @@ const NavbarDesktop = () => {
     <nav className="text-gray font-bold flex justify-between container py-12">
       <ul className="flex items-center">
         <li className="mr-10 hover:text-very-dark-violet">
-          <img className="logo" src="images/logo.svg" alt="logo" />
+          <img className="logo-navbar" src="images/logo.svg" alt="logo" />
         </li>
         <li className="text-sm mr-8 hover:text-very-dark-violet">Features</li>
         <li className="text-sm mr-8 hover:text-very-dark-violet">Pricing</li>

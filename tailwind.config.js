@@ -4,6 +4,7 @@ module.exports = {
     extend: {},
     colors: {
       cyan: "hsl(180, 66%, 49%)",
+     "cyan-hover": "hsl(180, 66%, 72%)",
       "dark-violet": "hsl(257, 27%, 26%)",
       red: "hsl(0, 87%, 67%)",
       gray: "hsl(0, 0%, 75%)",
@@ -19,7 +20,7 @@ module.exports = {
       lg: ["18px", "28px"],
       xl: ["22px", "30px"],
       "2xl": ["28px", "34px"],
-      "3xl": ["42px", "1.2"],
+      "3xl": ["38px", "1.2"],
       "4xl": ["80px", 1.2],
     },
     container: {
@@ -32,6 +33,8 @@ module.exports = {
     backgroundImage: {
       "shorten-sm": "url('../assets/bg-shorten-mobile.svg')",
       "shorten-lg": "url('../assets/bg-shorten-desktop.svg')",
+      "boost-sm": "url('../assets/bg-boost-mobile.svg')",
+      "boost-lg": "url('../assets/bg-boost-desktop.svg')",
     },
   },
   plugins: [],

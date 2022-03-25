@@ -24,19 +24,33 @@ const ShortenLinkBox: React.FC<Props> = ({ shortenLink }) => {
   return (
     <div className="shorten-link-box">
       <div>
-        <p className="text-very-dark-blue border-b border-gray p-3">
+        <p className="text-very-dark-blue border-b border-gray p-3 lg:border-0 lg:p-0">
           {shortenLink.url}
         </p>
       </div>
-      <div className="flex flex-col p-4">
-        <p className="text-cyan mb-3">https://{shortenLink.shortenLink}</p>
+      <div className="flex flex-col p-4 lg:flex-row lg:p-0 lg:items-center lg:space-x-6">
+        <p className="text-cyan mb-3 lg:mb-0">
+          https://{shortenLink.shortenLink}
+        </p>
         <CopyToClipboard
           text={shortenLink.shortenLink}
-          onCopy={() => setCopy(true)}
+          onCopy={() => {
+            console.log(copy);
+            setCopy(true);
+          }}
         >
-          <Button size="sm" radius="base" disable={copy}>
-            {copy ? "Copied!" : "Copy"}
-          </Button>
+          <div>
+            <div className="flex flex-col lg:hidden">
+              <Button size="sm" radius="base" disable={copy}>
+                {copy ? "Copied!" : "Copy"}
+              </Button>
+            </div>
+            <div className="hidden lg:block">
+              <Button size="s-sm" radius="base" disable={copy}>
+                {copy ? "Copied!" : "Copy"}
+              </Button>
+            </div>
+          </div>
         </CopyToClipboard>
       </div>
     </div>

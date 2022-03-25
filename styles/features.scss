@@ -1,10 +1,10 @@
 .shorten-box {
-  @apply flex flex-col p-6 space-y-4 rounded-lg bg-no-repeat bg-dark-violet bg-right-top -translate-y-1/2
+  @apply flex flex-col p-6 space-y-4 rounded-lg bg-no-repeat bg-dark-violet bg-right-top
   bg-shorten-sm lg:bg-shorten-lg lg:grid lg:grid-cols-[4fr_1fr] lg:gap-6 lg:px-16 lg:py-14 lg:space-y-0 lg:bg-cover;
 }
 
 .shorten-link-box {
-  @apply flex flex-col rounded-lg bg-white -translate-y-1/2;
+  @apply flex flex-col rounded-lg bg-white lg:flex-row lg:justify-between lg:items-center lg:py-4 lg:px-8;
 }
 
 input.error {
@@ -16,7 +16,5 @@ input.error::placeholder {
 }
 
 .boost-box {
-  @apply bg-dark-violet bg-no-repeat bg-right-top py-24 px-8;
-  background-image: url("../assets/bg-boost-mobile.svg");
-  background-size: 100% auto;
+  @apply bg-dark-violet bg-no-repeat bg-center py-24 px-8 bg-boost-sm lg:bg-boost-lg bg-cover lg:py-16;
 }

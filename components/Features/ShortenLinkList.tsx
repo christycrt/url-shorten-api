@@ -11,7 +11,7 @@ const ShortenLinkList = () => {
   >([]);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 -translate-y-[90px]">
       <InputLinkBox
         shortenLinks={shortenLinks}
         setShortenLinks={setShortenLinks}

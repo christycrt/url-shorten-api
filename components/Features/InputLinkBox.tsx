@@ -54,20 +54,22 @@ const InputLinkBox: React.FC<Props> = ({ shortenLinks, setShortenLinks }) => {
       <div className="shorten-box">
         <div>
           <input
-            className={`bg-white px-3 py-3 rounded-md h-[56px] mb-1 w-[100%] outline-none lg:mb-0 lg:px-8 lg:py-8 ${
+            className={`bg-white px-3 py-3 rounded-md h-[64px] mb-1 w-[100%] outline-none lg:mb-2 lg:px-8 lg:py-8 ${
               errors.url ? "error" : ""
             }`}
             type="text"
             placeholder="Shorten a link here..."
             {...register("url", { required: true })}
           />
-          <p className="text-red italic text-sm">
+          <p className="text-red italic text-sm lg:absolute">
             {errors.url && "Please add a link"}
           </p>
         </div>
-        <Button type="submit" size="base" radius="base">
-          Shorten It!
-        </Button>
+        <div className="flex flex-col lg:flex lg:flex-row lg:h-[64px]">
+          <Button type="submit" size="base" radius="base">
+            Shorten It!
+          </Button>
+        </div>
       </div>
     </form>
   );

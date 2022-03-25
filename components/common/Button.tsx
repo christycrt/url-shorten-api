@@ -43,7 +43,7 @@ const Button: React.FC<Props> = ({
   return (
     <button
       type={type}
-      className={`bg-cyan text-white font-bold ${sizeClass} ${radiusClass}`}
+      className={`bg-cyan text-white font-bold hover:bg-cyan-hover ${sizeClass} ${radiusClass}`}
       onClick={onClick}
       disabled={disable}
     >

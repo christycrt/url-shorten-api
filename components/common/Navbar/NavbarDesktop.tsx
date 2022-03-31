@@ -11,15 +11,13 @@ const NavbarDesktop = () => {
         <li className="text-sm mr-8 hover:text-very-dark-violet">Pricing</li>
         <li className="text-sm hover:text-very-dark-violet">Resouces</li>
       </ul>
-      <ul>
-        <ul className="flex items-center">
-          <li className="text-sm mr-8 hover:text-very-dark-violet">Login</li>
-          <li className="flex flex-col">
-            <Button size="s-sm" radius="full">
-              Sign up
-            </Button>
-          </li>
-        </ul>
+      <ul className="flex items-center">
+        <li className="text-sm mr-8 hover:text-very-dark-violet">Login</li>
+        <li className="flex flex-col">
+          <Button size="s-sm" radius="full">
+            Sign up
+          </Button>
+        </li>
       </ul>
     </nav>
   );
